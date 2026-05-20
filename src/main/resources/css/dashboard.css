@@ -1,0 +1,4 @@
+/* Styles for dashboard screens */
+.dashboard-pane {
+    -fx-padding: 20px;
+}

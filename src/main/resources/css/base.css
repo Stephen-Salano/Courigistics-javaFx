@@ -1,0 +1,5 @@
+/* Base styles for the application */
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+}
