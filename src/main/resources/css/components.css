@@ -3,3 +3,22 @@
     -fx-padding: 2 8;
     -fx-background-radius: 10;
 }
+
+.error-modal {
+    -fx-background-color: #1e1e2e;
+    -fx-border-color: #e55353;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.error-modal .content.label {
+    -fx-text-fill: #f0f0f0;
+    -fx-font-size: 13px;
+}
+
+.error-modal .button-bar .button {
+    -fx-background-color: #e55353;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}

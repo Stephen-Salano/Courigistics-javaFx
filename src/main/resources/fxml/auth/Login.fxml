@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="580.0" prefWidth="420.0" style="-fx-background-color: #f0f4ff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.courigistics.courigisticsjavafx.controllers.auth.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefWidth="360.0" spacing="12.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4); -fx-background-radius: 16;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <StackPane prefHeight="56.0" prefWidth="56.0" style="-fx-background-color: #e8eeff; -fx-background-radius: 28;">
+               <VBox.margin>
+                  <Insets bottom="4.0" />
+               </VBox.margin>
+               <children>
+                  <Label style="-fx-font-size: 22; -fx-text-fill: #3a5bef;" text="→" />
+               </children>
+            </StackPane>
+            <Label fx:id="welcomeLabel" style="-fx-font-size: 22; -fx-font-weight: bold; -fx-text-fill: #1a1a2e;" text="Welcome Back" />
+            <Label fx:id="subtitleLabel" style="-fx-font-size: 13; -fx-text-fill: #888;" text="Sign in to access your dashboard" />
+            <Region prefHeight="4.0" VBox.vgrow="NEVER" />
+            <Label prefWidth="288.0" style="-fx-font-size: 12; -fx-text-fill: #555;" text="Sign In as">
+               <VBox.margin>
+                  <Insets left="2.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="roleSelectorBox" alignment="CENTER" prefHeight="48.0" prefWidth="288.0" spacing="8.0">
+               <children>
+                  <ToggleButton fx:id="customerToggle" mnemonicParsing="false" prefHeight="44.0" prefWidth="140.0" selected="true" text="Customer">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="loginToggleGroup" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="courierToggle" mnemonicParsing="false" prefHeight="44.0" prefWidth="140.0" text="Courier" toggleGroup="$loginToggleGroup" />
+               </children>
+            </HBox>
+            <Label prefWidth="288.0" style="-fx-font-size: 12; -fx-text-fill: #333;" text="Username or Email">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="usernameField" prefHeight="40.0" prefWidth="288.0" promptText="Enter your username or email" />
+            <Label prefWidth="288.0" style="-fx-font-size: 12; -fx-text-fill: #333;" text="Password">
+               <VBox.margin>
+                  <Insets top="6.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="passwordField" prefHeight="40.0" prefWidth="288.0" promptText="Enter your password" />
+            <HBox alignment="CENTER_RIGHT" prefWidth="288.0">
+               <children>
+                  <Hyperlink fx:id="forgotPasswordLink" style="-fx-font-size: 12; -fx-text-fill: #3a5bef;" text="Forgot Password?" />
+               </children>
+            </HBox>
+            <Button fx:id="signInBtn" mnemonicParsing="false" prefHeight="44.0" prefWidth="288.0" style="-fx-background-color: #3a5bef; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 8; -fx-cursor: hand;" text="Sign In">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" top="40.0" />
+         </padding></VBox>
+   </children>
+</AnchorPane>
